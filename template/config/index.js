@@ -10,8 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
-
+    proxyTable: {'/ytoApi': {
+      // target: 'http://10.129.222.66:8002/cockpit',
+      target: 'http://192.168.8.81:8001/ytoApi',
+      // target: 'http://192.168.25.50:8001/cockpit',
+      // target: 'http://192.168.8.88:8003/cockpit',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/ytoApi': '/'
+      }
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
