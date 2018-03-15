@@ -1,7 +1,7 @@
 // import { loginByUsername, logout, getUserInfo } from '@/api/login'
 // import { getToken, setToken, removeToken } from '@/utils/auth'
 import { setStore, getStore, removeStore } from '@/components/date';
-import { accountLoginAPI, userOrgTypeAPI } from '@/service/index';
+import { accountLoginAPI } from '@/service/index';
 
 const user = {
   state: {

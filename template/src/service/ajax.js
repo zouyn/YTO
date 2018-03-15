@@ -8,7 +8,7 @@ import { getStore } from '@/components/date';
 // create an axios instance
 const service = axios.create({
   baseURL: process.env.BASE_API, // api的base_url
-  timeout: 60000, // request timeout
+  timeout: 20000, // request timeout
   responseType: 'json'
 });
 // 添加请求拦截器

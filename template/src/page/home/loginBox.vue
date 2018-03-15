@@ -2,7 +2,7 @@
   <transition name="el-fade-in-linear">
     <el-form label-width="45px" class="yto-login-box" :model="loginForm">
       <el-form-item label="">
-        <h2>管理驾驶舱</h2>
+        <h2>圆通项目名称</h2>
       </el-form-item>
       <el-form-item label="账号">
         <el-input placeholder="请输入账号" v-model="loginForm.username"></el-input>
@@ -10,7 +10,7 @@
       <el-form-item label="密码">
         <el-input :type="passwordType" placeholder="请输入密码" v-model="loginForm.password"></el-input>
         <span class="show-pwd" @click="showPwd">
-          <svg-icon icon-class="eye"/>
+          <i class="el-icon-view"></i>
         </span>
       </el-form-item>
       <el-form-item>
